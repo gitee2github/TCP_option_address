@@ -1,37 +1,34 @@
-# TCP_option_address
+# TCP Option Address
 
-#### 介绍
-obtains the source IPv4 address from the option section of a TCP header.
+The TCP Option Address (TOA) module is a kernel module that obtains the source IPv4 address from the option section of a TCP header.
 
-#### 软件架构
-软件架构说明
+## How to use the TOA module?
 
+### Requirement
 
-#### 安装教程
+The development environment for compiling the kernel module consists of: 
+- kernel headers and the module library
+- the gcc compiler
+- GNU Make tool
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+### Installation
 
-#### 使用说明
+Download and decompress the source package:
+```
+https://github.com/Huawei/TCP_option_address/archive/master.zip
+```
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+Enter the source code directory and compile the module:
+```
+cd src
+make
+```
 
-#### 参与贡献
+Load the kernel module:
+```
+sudo insmod toa.ko
+```
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+## Distribution license
 
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+TOA is distributed under the terms of the GNU General Public License v2.0. The full terms and conditions of this license are detailed in the LICENSE file.
